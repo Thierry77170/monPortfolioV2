@@ -11,6 +11,8 @@ import './slider.scss';
 function Slider() {
     const [projects, setProjects] = useState([]);
     const [currentIndex, setCurrentIndex] = useState(0);
+    const [isSmallScreen, setIsSmallScreen] = useState(false);
+    const [isVerySmallScreen, setIsVerySmallScreen] = useState(false);
 
     useEffect(() => {
         const fetchData = async () => {
@@ -26,9 +28,21 @@ function Slider() {
         }
         fetchData();
     }, []);
-    
+
+    useEffect(() => {
+      const handleResize = () => {
+          setIsSmallScreen(window.innerWidth < 880);
+          setIsVerySmallScreen(window.innerWidth < 560);
+      };
+      window.addEventListener('resize', handleResize);
+      handleResize(); // Appel initial pour définir l'état initial pour tablette
+      return () => window.removeEventListener('resize', handleResize);
+    }, []);
 
     const getRotateY = (index, total) => {
+        if (isVerySmallScreen) {
+          return 0;
+        }
         const middleIndex = Math.floor(total / 2);
         const middleRange = [middleIndex - 2, middleIndex - 1, middleIndex, middleIndex + 1, middleIndex + 2];
         const adjustedIndex = (index - currentIndex + total) % total;
@@ -49,21 +63,24 @@ function Slider() {
     };
 
     const getTranslateZ = (index, total) => {
+        if (isVerySmallScreen) {
+          return 0;
+        }
         const middleIndex = Math.floor(total / 2);
         const middleRange = [middleIndex - 2, middleIndex - 1, middleIndex, middleIndex + 1, middleIndex + 2];
         const adjustedIndex = (index - currentIndex + total) % total;
         if (adjustedIndex < middleRange[0] || adjustedIndex > middleRange[4]) {
-          return 500;
+          return isSmallScreen ? 300 : 500;
         } else {
           switch (adjustedIndex - (middleIndex - 2)) {
-            case 0: return 400;
-            case 1: return 450;
-            case 2: return 500;
-            case 3: return 450;
-            case 4: return 400;
-            default: return 500;
-          }
+            case 0: return isSmallScreen ? 260 : 400;
+            case 1: return isSmallScreen ? 280 : 450;
+            case 2: return isSmallScreen ? 300 : 500;
+            case 3: return isSmallScreen ? 280 : 450;
+            case 4: return isSmallScreen ? 260 : 400;
+            default: return isSmallScreen ? 300 : 500;
         }
+      }
     };
 
     const getOpacity = (index, total) => {
@@ -74,11 +91,11 @@ function Slider() {
         return 0;
       } else {
         switch (adjustedIndex - (middleIndex - 2)) {
-          case 0: return 0.7;
-          case 1: return 0.85;
-          case 2: return 1;
-          case 3: return 0.85;
-          case 4: return 0.7;
+          case 0: return isVerySmallScreen ? 0 : 0.7;
+          case 1: return isVerySmallScreen ? 0 : 0.85;
+          case 2: return isVerySmallScreen ? 1 : 1;
+          case 3: return isVerySmallScreen ? 0 : 0.85;
+          case 4: return isVerySmallScreen ? 0 : 0.7;
           default: return 1;
         }
       }
@@ -96,6 +113,7 @@ function Slider() {
 
     return (
         <section className='sliderContainer'>
+            <h2 className='sliderContainer__title'>Mes réalisations</h2>
             <div className='sliderContainer__slider'>
                 {projects.map((project, index) => {
                     const rotateY = getRotateY(index, projects.length);
@@ -122,7 +140,6 @@ function Slider() {
                     onClick={handleClickNextBtn}
                 />
             </div>
-           
         </section> 
     )
 }

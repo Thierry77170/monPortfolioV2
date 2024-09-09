@@ -1,7 +1,15 @@
+@import './variables/variables.scss';
+
 html {
   scroll-behavior: smooth;
 }
 
 body {
   margin: 0;
+  
+}
+
+h2 {
+  font-family: $font-family-comfortaa;
+  text-align: center;
 }

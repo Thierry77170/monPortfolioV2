@@ -10,3 +10,7 @@
     height: auto;
     padding: 2px;
 }
+
+.button:hover {
+    background-color: $backgroundColor-btnNavBarHover;
+}

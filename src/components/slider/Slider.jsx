@@ -8,26 +8,10 @@ import BtnSlider from "../btnSlider/BtnSlider";
 // STYLE
 import './slider.scss';
 
-function Slider() {
-    const [projects, setProjects] = useState([]);
+function Slider({projects}) {
     const [currentIndex, setCurrentIndex] = useState(0);
     const [isSmallScreen, setIsSmallScreen] = useState(false);
     const [isVerySmallScreen, setIsVerySmallScreen] = useState(false);
-
-    useEffect(() => {
-        const fetchData = async () => {
-            try {
-                const response = await fetch("https://firestore.googleapis.com/v1/projects/monportfolio-8dd08/databases/(default)/documents/works");
-                const data = await response.json();
-                const projectsFields = data.documents.map(doc => doc.fields);
-                setProjects(projectsFields);
-                console.log("fetchData", projectsFields);
-            } catch (error) {
-                console.error("Error fetching data:", error);
-            }
-        }
-        fetchData();
-    }, []);
 
     useEffect(() => {
       const handleResize = () => {
@@ -100,8 +84,6 @@ function Slider() {
         }
       }
   };
-
-  console.log(currentIndex);
 
   const handleClickPrevBtn = () => {
     setCurrentIndex((prevIndex) => (prevIndex - 1 + projects.length) % projects.length);

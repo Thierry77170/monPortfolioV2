@@ -1,0 +1,12 @@
+@import '../../variables/variables.scss';
+
+.button {
+    cursor: pointer;
+    border: 1px solid $boder-btnNavBar;
+    border-radius: 15px;
+    font-family: $font-family-red-hat-display;
+    background-color: $backgroundColor-btnNavBar;
+    width: 100px;
+    height: auto;
+    padding: 2px;
+}

@@ -1,7 +1,28 @@
 @import '../../variables/variables.scss';
 
-.headerContainer {
+.header {
     background-color: $backgroundHeader;
+}
+
+.navContainer {
+    padding: 0px 5px 20px 5px;
+    display: flex;
+    justify-content: center;
+}
+
+.ulContainer {
+    margin: 0px;
+    list-style-type: none;
+    padding: 5px;
+    border: 1px solid $boder-btnNavBar;
+    border-radius: 18px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    background-color: $backgroundColor-navBar;
+}
+
+.headerContainer {
     text-align: center;
     padding: 20px 0px;
     &__title {

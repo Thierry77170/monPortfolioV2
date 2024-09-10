@@ -1,9 +1,28 @@
 @import '../../variables/variables.scss';
 
-.titleHeader {
-    font-family: $font-family-comfortaa;
+.headerContainer {
+    background-color: $backgroundHeader;
+    text-align: center;
+    padding: 20px 0px;
+    &__title {
+        font-family: $font-family-comfortaa;
+        margin: 0px;
+    }
+    &__text1 {
+        font-family: $font-family-red-hat-display;
+        margin: 0px;
+    }
+    &__text2 {
+        font-family: $font-family-red-hat-display;
+        margin: 0px;
+    }
 }
 
-.textHeader {
-    font-family: $font-family-red-hat-display;
+/******* Media queries **********/
+/*  Small devices (tablets, less than 560px)  */
+@media (max-width: 559px) {
+    .header {
+        font-size: 0.8em;
+    }
 }
+

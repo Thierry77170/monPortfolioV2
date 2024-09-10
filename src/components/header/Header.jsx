@@ -3,9 +3,13 @@ import './header.scss';
 
 function Header() {
     return (
-        <header>
-            <h1 className="titleHeader">Thierry DE SOUSA</h1>
-            <p className='textHeader'>Développeur web Front-End</p>
+        <header className='header'>
+            <div className='headerContainer'>
+                <h1 className="headerContainer__title">Thierry DE SOUSA</h1>
+                <p className='headerContainer__text1'>Développeur web Front-End JavaScript/React.js</p>
+                <p className='headerContainer__text2'>Passionné et engagé</p>
+            </div>
+            
         </header>
     )
 }

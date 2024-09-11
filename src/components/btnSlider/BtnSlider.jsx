@@ -1,10 +1,12 @@
 // STYLE
 import './btnSlider.scss';
 
-function BtnSlider({value, onClick}) {
+function BtnSlider({src, alt, onClick}) {
     return (
         <>
-            <button className="arrow" onClick={onClick} >{value}</button>
+            <button className="arrow" onClick={onClick}>
+                <img src={src} alt={alt} className='arrow__icons' />
+            </button>
         </>  
     )
 }

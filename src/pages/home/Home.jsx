@@ -2,7 +2,7 @@
 import { useEffect, useState } from 'react';
 
 // COMPONENTS
-import Slider from "../../components/slider/Slider.jsx";
+import Slider from "../../components/slider/Slider.jsx"
 
 // STYLE
 import './home.scss';

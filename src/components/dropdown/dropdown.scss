@@ -1,0 +1,51 @@
+@import '../../variables/variables.scss';
+
+.sectionDropdown {
+    display: flex;
+    justify-content: center;
+    background-color: $backgroundColor-navBar;
+    &__dropdownContainer {
+        width: 100%;
+        max-width: 800px;
+        margin: 20px 16px;
+        border-radius: 5px;
+        border: 1px solid $boder-btnNavBar;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        overflow: hidden;
+    }
+}
+
+.dropdownTitleContainer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 4px 4px 0px 0px;
+    background-color: $backgroundColor-btnNavBar;
+    cursor: pointer;
+    &__arrow {
+        transform: rotate(180deg);
+        transition: transform 0.6s ease-in-out;
+        width: 30px;
+        height: 20px;
+    }
+}
+
+.dropdownTitleContainer__arrow.open {
+    transform: rotate(0deg);
+}
+
+.dropdownTextContainer {
+    max-height: 0px;
+    transition: max-height 0.5s ease-in-out;
+    font-family: $font-family-red-hat-display;
+    &__text {
+        margin: 0px;
+        padding: 10px;
+
+    }
+}
+
+.dropdownTextContainer.open {
+    max-height: 500px;
+    transition: max-height 0.5s ease-in-out;
+}

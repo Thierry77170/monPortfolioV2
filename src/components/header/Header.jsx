@@ -18,7 +18,7 @@ function Header() {
                         <BtnNavBar title="Accueil"/>
                     </li>
                     <li>
-                        <BtnNavBar title="Contact" />
+                        <BtnNavBar title="À propos" />
                     </li>
                 </ul>
             </nav>

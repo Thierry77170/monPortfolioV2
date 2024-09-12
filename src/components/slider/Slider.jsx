@@ -18,6 +18,10 @@ function Slider({projects}) {
   const [isSmallScreen, setIsSmallScreen] = useState(false);
   const [isVerySmallScreen, setIsVerySmallScreen] = useState(false);
   const [centralDescription, setCentralDescription] = useState('');
+  const [centralTechno1, setCentralTechno1] = useState('');
+  const [centralTechno2, setCentralTechno2] = useState('');
+  const [centralTechno3, setCentralTechno3] = useState('');
+  const [centralTechno4, setCentralTechno4] = useState('');
  
   useEffect(() => {
     const handleResize = () => {
@@ -29,15 +33,21 @@ function Slider({projects}) {
     return () => window.removeEventListener('resize', handleResize);
   }, []);
 
-
-
   useEffect(() => {
     if (projects.length > 0) {
         const middleIndex = Math.floor(projects.length / 2);
         const adjustedIndex = (currentIndex + middleIndex) % projects.length;
         setCentralDescription(projects[adjustedIndex].description?.stringValue || '');
+        setCentralTechno1(projects[adjustedIndex].techno1?.stringValue || '');
+        setCentralTechno2(projects[adjustedIndex].techno2?.stringValue || '');
+        setCentralTechno3(projects[adjustedIndex].techno3?.stringValue || '');
+        setCentralTechno4(projects[adjustedIndex].techno4?.stringValue || '');
     } else {
         setCentralDescription('');
+        setCentralTechno1('');
+        setCentralTechno2('');
+        setCentralTechno3('');
+        setCentralTechno4('');
     }
   }, [currentIndex, projects]);
   
@@ -144,7 +154,13 @@ function Slider({projects}) {
             />
         </div>
       </section>
-      <Dropdown description={centralDescription} />
+      <Dropdown 
+        description={centralDescription}
+        techno1={centralTechno1}
+        techno2={centralTechno2}
+        techno3={centralTechno3}
+        techno4={centralTechno4}
+      />
     </>
   )
 }

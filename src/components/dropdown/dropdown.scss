@@ -38,10 +38,19 @@
     max-height: 0px;
     transition: max-height 0.5s ease-in-out;
     font-family: $font-family-red-hat-display;
+    font-size: 12px;
     &__text {
         margin: 0px;
         padding: 10px;
-
+    }
+    &__containerIcons {
+        display: flex;
+        justify-content: space-between;
+        padding: 10px;
+        &--icons {
+            width: 30px;
+            height: 30px;
+        }
     }
 }
 

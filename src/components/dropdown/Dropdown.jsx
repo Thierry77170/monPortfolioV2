@@ -7,7 +7,7 @@ import arrowDropdown from '../../assets/icons/arrow-down.256x139.png'
 // STYLE
 import './dropdown.scss';
 
-function Dropdown({description}) {
+function Dropdown({description, techno1, techno2, techno3, techno4}) {
     const [isOpen, setIsOpen] = useState(false);
     const dropdownTitleContainerArrowRef = useRef(null);
     const dropdownTextContainerRef = useRef(null);
@@ -35,6 +35,12 @@ function Dropdown({description}) {
                     <p className='dropdownTextContainer__text'>
                         {description}
                     </p>
+                    <div className='dropdownTextContainer__containerIcons'>
+                        {techno1 && <img src={techno1} alt="Technologie 1" className='dropdownTextContainer__containerIcons--icons' />}
+                        {techno2 && <img src={techno2} alt="Technologie 2" className='dropdownTextContainer__containerIcons--icons' />}
+                        {techno3 && <img src={techno3} alt="Technologie 3" className='dropdownTextContainer__containerIcons--icons' />}
+                        {techno4 && <img src={techno4} alt="Technologie 4" className='dropdownTextContainer__containerIcons--icons' />}
+                    </div>
                 </div>
             </article>
         </section>

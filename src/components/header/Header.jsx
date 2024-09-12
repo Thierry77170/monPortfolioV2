@@ -1,3 +1,6 @@
+// REACT-ROUTER-DOM
+import { NavLink } from 'react-router-dom';
+
 // STYLE
 import './header.scss';
 
@@ -15,14 +18,17 @@ function Header() {
             <nav className='navContainer'>
                 <ul className='ulContainer'>
                     <li>
-                        <BtnNavBar title="Accueil"/>
+                        <NavLink to='/home'>
+                            <BtnNavBar title="Accueil"/>
+                        </NavLink>
                     </li>
                     <li>
-                        <BtnNavBar title="À propos" />
+                        <NavLink to='/about'>
+                            <BtnNavBar title="À propos" />
+                        </NavLink>
                     </li>
                 </ul>
             </nav>
-            
         </header>
     )
 }

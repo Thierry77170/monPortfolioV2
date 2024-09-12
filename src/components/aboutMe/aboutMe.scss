@@ -1,0 +1,13 @@
+@import '../../variables/variables.scss';
+
+.aboutMeSection {
+    padding: 20px 0px;
+    background-color: $backgroundColor-sliderContainer-sand;
+}
+
+.aboutMeContainer {
+    &__img {
+        width: 230px;
+        height: 200px;
+    }
+}

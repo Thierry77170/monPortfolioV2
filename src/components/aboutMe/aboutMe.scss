@@ -5,6 +5,9 @@
     height: auto;
     padding: 20px 0px;
     background-color: $backgroundColor-sliderContainer-sand;
+    &__title {
+        margin-top: 0px;
+    }
 }
 
 .aboutMeContainer {

@@ -1,11 +1,12 @@
 // REACT-ROUTE-DOM
-import { createBrowserRouter } from 'react-router-dom';
-import { RouterProvider } from 'react-router-dom';
+import { createBrowserRouter } from 'react-router-dom'
+import { RouterProvider } from 'react-router-dom'
 
 // COMPONENTS
 import Root from './rooting/Root.jsx'
-import Home from'./pages/home/Home.jsx'
-import About from'./pages/about/About.jsx'
+import Home from './pages/home/Home.jsx'
+import About from './pages/about/About.jsx'
+import PageError from './pages/pageError/PageError.jsx'
 
 // VARIABLE
 const router = createBrowserRouter([
@@ -13,6 +14,10 @@ const router = createBrowserRouter([
     path: '/',
     element: <Root />,
     children: [
+      {
+        path:'*',
+        element: <PageError />
+      },
       {
         path: '/',
         element: <Home />

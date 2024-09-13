@@ -8,6 +8,9 @@ import './aboutMe.scss'
 function AboutMe() {
     return (
         <section className='aboutMeSection'>
+            <h2 className='aboutMeSection__title'>
+                À propos de moi
+            </h2>
             <article className='aboutMeContainer'>
                 <img 
                     src={developperActivity} 

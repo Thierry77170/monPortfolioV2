@@ -4,9 +4,6 @@ import { useEffect, useState } from 'react';
 // COMPONENTS
 import Slider from "../../components/slider/Slider.jsx"
 
-// STYLE
-import './home.scss';
-
 function Home() {
     const [projects, setProjects] = useState([]);
 
@@ -27,7 +24,7 @@ function Home() {
 
     return (
         <main>
-            <Slider projects={projects}/>
+            <Slider projects={projects} />
         </main>
     )
 }

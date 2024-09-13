@@ -1,5 +1,5 @@
 //REACT
-import React, { useState, useRef } from 'react';
+import { useState, useRef } from 'react';
 
 // VARIABLE
 import arrowDropdown from '../../assets/icons/arrow-down.256x139.png'

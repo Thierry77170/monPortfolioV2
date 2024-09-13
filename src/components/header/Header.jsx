@@ -8,6 +8,7 @@ import './header.scss';
 import BtnNavBar from '../btnNavBar/BtnNavBar.jsx'
 
 function Header() {
+    
     return (
         <header className='header'>
             <div className='headerContainer'>
@@ -18,12 +19,12 @@ function Header() {
             <nav className='navContainer'>
                 <ul className='ulContainer'>
                     <li>
-                        <NavLink to='/home'>
+                        <NavLink to='/home' className={({ isActive }) => isActive ? 'active' : ''}>
                             <BtnNavBar title="Accueil"/>
                         </NavLink>
                     </li>
                     <li>
-                        <NavLink to='/about'>
+                        <NavLink to='/about' className={({ isActive }) => isActive ? 'active' : ''}>
                             <BtnNavBar title="À propos" />
                         </NavLink>
                     </li>

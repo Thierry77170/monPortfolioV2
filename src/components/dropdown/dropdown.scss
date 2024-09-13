@@ -45,7 +45,8 @@
     }
     &__containerIcons {
         display: flex;
-        justify-content: space-between;
+        justify-content: center;
+        gap: 20px;
         padding: 10px;
         &--icons {
             width: 30px;

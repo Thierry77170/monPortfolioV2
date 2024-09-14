@@ -1,1 +1,25 @@
 @import '../../variables/variables.scss';
+
+.errorPageContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 20px 0px;
+}
+
+.errorImgContainer {
+    &__img {
+        width: 288px;
+        height: auto;
+    }
+}
+
+.ErrorMessageContainer {
+    &__text {
+        font-family: $font-family-red-hat-display;
+        padding: 0px 16px;
+        text-align: center;
+    }
+}

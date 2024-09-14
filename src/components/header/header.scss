@@ -24,7 +24,6 @@
 
 .navContainer {
     width: 100%;
-    padding: 0px 5px 20px 5px;
     display: flex;
     justify-content: center;
     position: fixed;
@@ -37,9 +36,8 @@
     height: auto;
     margin: 0px;
     list-style-type: none;
-    padding: 5px;
+    padding: 5px 0px;
     border-bottom: 1px solid $boder-btnNavBar;
-    border-radius: 18px;
     display: flex;
     justify-content: center;
     gap: 10px;

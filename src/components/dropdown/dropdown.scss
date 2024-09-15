@@ -24,8 +24,8 @@
     cursor: pointer;
     &__arrow {
         transform: rotate(180deg);
-        transition: transform 0.6s ease-in-out;
-        width: 30px;
+        transition: transform 0.8s ease-in-out;
+        width: 40px;
         height: 20px;
     }
 }
@@ -36,7 +36,7 @@
 
 .dropdownTextContainer {
     max-height: 0px;
-    transition: max-height 0.5s ease-in-out;
+    transition: max-height 0.8s ease-in-out;
     font-family: $font-family-red-hat-display;
     font-size: 12px;
     &__text {
@@ -57,5 +57,5 @@
 
 .dropdownTextContainer.open {
     max-height: 500px;
-    transition: max-height 0.5s ease-in-out;
+    transition: max-height 0.8s ease-in-out;
 }

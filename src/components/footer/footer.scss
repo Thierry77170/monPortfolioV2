@@ -77,7 +77,6 @@
     align-items: center;
     gap: 20px;
     list-style-type: none;
-    padding: 0px 0px 10px 0px;
     margin: 0px;
     &__info {
         display: flex;
@@ -92,6 +91,16 @@
             margin: 0px;
         }
     }
+}
+
+.downloadCV {
+    text-decoration: none;
+    border: 2px solid $boder-btnNavBar;
+    border-radius: 5px;
+    padding: 10px;
+    font-family: $font-family-red-hat-display;
+    background-color: $backgroundColor-navBar;
+    margin: 10px 0px;
 }
 
 

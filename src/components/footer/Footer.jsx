@@ -59,6 +59,12 @@ function Footer() {
                     <p className='contactContainer__info--text'>Seine-et-Marne (77), Île-de-France</p>
                 </li>
             </ul>
+            <a href={process.env.PUBLIC_URL + '/files/C.V.Thierry.DeSousa.pdf'} 
+                download
+                className='downloadCV'
+            >
+                Téléchargez mon C.V.
+            </a>
             <p className='footer__textContainer'>
                 Cette application web a été développée avec
             </p>

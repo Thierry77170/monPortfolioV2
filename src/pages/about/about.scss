@@ -60,25 +60,26 @@
 
 .maStackSection {
     width: 98%;
-    height: 100%;
-    margin: auto;
-    display: flex;
-    gap: 2%;
+    height: auto;
+    display: grid;
+    grid-template-columns: 49% 49%;
+    grid-template-rows: 100%;
     margin-bottom: 2%;
+    margin: auto;
+    gap: 2%;
 }
 
 .maStackContainer, .mesOutilsContainer {
-    width: 98%;
-    height: auto;
+    width: 96%;
     margin: auto;
     border-radius: 10px;
-    padding: 20px 16px;
+    padding: 2% 2% 0% 2%;
     margin-top: 2%;
     background-color: $backgroundColor-elements;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    alig
+    justify-content: start;
+    
     &__title {
         margin: 0px 0px 20px 0px;
         padding: 0px 16px;
@@ -86,7 +87,7 @@
 }
 
 .maStack, .mesOutils {
-    height: 100%;
+    height: auto;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -107,23 +108,17 @@
         height: auto;
         width: 100%;
         gap: 20px;
-
+        padding-bottom: 2%;
     }
 }
 
-/*  Large devices (Desktop, more than 1029px)  */
-@media (min-width: 1029px) {
-    .maStackContainer, .mesOutilsContainer {
-        height: 100%;
-    }
-}
 
-/*  Small devices (tablets, less than 1029px)  */
-@media (max-width: 1028px) {
+/*  Small devices (tablets, less than 999px)  */
+@media (min-width: 500.1px) and (max-width: 998px) {
     .maStackContainer, .mesOutilsContainer {
-        height: 100vh;
         &__title {
-            height: 55px;
+            font-size: 16px;
+            padding: 0px;
         }
     }
 
@@ -131,6 +126,10 @@
         display: grid;
         grid-template-columns: 221px;
         grid-template-rows: 86.14px 86.14px 86.14px 86.14px 86.14px 86.14px;
+        height: auto;
+        width: 100%;
+        gap: 20px;
+        padding-bottom: 3%;
     }
 }
 
@@ -147,28 +146,18 @@
             margin: auto;
         }
     }
- }
-
- /* Small devices (mobile, less than 580px)  */
- @media (max-width: 579px) {
-    .maStackSection {
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
 
     .maStackContainer, .mesOutilsContainer {
-        padding: 0px;
-       height: 100%;
+        &__title {
+            font-size: 16px;
+        }
     }
+ }
 
-    .maStack, .mesOutils {
-        height: auto;
+ /* Small devices (mobile, less than 501px)  */
+ @media (max-width: 500px) {
+    .maStackSection {
         display: flex;
         flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        gap: 2%;
     }
  }

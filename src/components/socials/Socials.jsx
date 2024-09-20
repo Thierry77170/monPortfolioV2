@@ -21,7 +21,7 @@ function Socials() {
                         <img 
                             src={gitHub} 
                             alt={`icon de ${gitHub}`}
-                            className='containerIcon__icon' 
+                            className='containerIcon__icon icon1' 
                         />
                     </span>
                 </div>
@@ -36,7 +36,7 @@ function Socials() {
                         <img 
                             src={linkedin} 
                             alt={`icon de ${linkedin}`}
-                            className='containerIcon__icon' 
+                            className='containerIcon__icon icon2' 
                         />
                     </span>
                 </div>
@@ -51,7 +51,7 @@ function Socials() {
                         <img 
                             src={discord}
                             alt={`icon de ${discord}`}
-                            className='containerIcon__icon' 
+                            className='containerIcon__icon icon3' 
                         />
                     </span>
                 </div>

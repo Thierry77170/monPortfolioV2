@@ -6,8 +6,10 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding-top: 2%;
     &__textContainer {
       font-family: $font-family-red-hat-display;
+      text-align: center;
       margin: 2% 0px;
     }
 }
@@ -30,7 +32,6 @@
     font-family: $font-family-red-hat-display;
     
 }
-
 
 
 

@@ -1,63 +1,71 @@
 @import '../../variables/variables.scss';
 
 .card {
-    position: relative;
-    min-width: 301.77px;
-    max-width: 301.77px;
-    height: 190.58px;
-    border-radius: 10px;
-    overflow: hidden;
-    transition: all 1s ease-in-out;
-    border: 2px solid #F1F1F1;
-    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
-  }
+  position: relative;
+  min-width: 301.77px;
+  max-width: 301.77px;
+  height: 190.58px;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: all 1s ease-in-out;
+  border: 2px solid #F1F1F1;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+}
 
 .background {
-    position: absolute;
-    // Raccourci CSS équivalent à "top: 0; right: 0; bottom: 0; left: 0;"
-    inset: 0;
-    background-image: linear-gradient(to top, #4158D0 0%, #C850C0 100%);
-  }
+  position: absolute;
+  // Raccourci CSS équivalent à "top: 0; right: 0; bottom: 0; left: 0;"
+  inset: 0;
+  background-image: linear-gradient(to top, #4158D0 0%, #C850C0 100%);
+}
 
-  .socialsText {
-    position: absolute;
-    right: 50%;
-    bottom: 50%;
-    transform: translate(50%, 50%);
-    transition: all 0.6s ease-in-out;
-    font-size: 1.4em;
-    font-family: $font-family-red-hat-display;
-    font-weight: bold;
-    // On définit l'espacement entre les caractères (ou lettres) du texte
-    letter-spacing: 2px;
-    margin: 0px;
-    width: 100%;
-    text-align: center;
-  }
+.socialsText {
+  position: absolute;
+  right: 50%;
+  bottom: 50%;
+  transform: translate(50%, 50%);
+  transition: all 0.6s ease-in-out;
+  font-size: 1.4em;
+  font-family: $font-family-red-hat-display;
+  font-weight: bold;
+  // On définit l'espacement entre les caractères (ou lettres) du texte
+  letter-spacing: 2px;
+  margin: 0px;
+  width: 100%;
+  text-align: center;
+}
 
-  .containerIcon {
-    display: inline-block;
-    width: 20px;
-    height: 20px;
-    &__icon {
-        height: 20px;
-        width: 20px;
-        transition: all 0.5s ease-in-out;
-    }
+.containerIcon {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  &__icon {
+      height: 40px;
+      width: 40px;
+      transition: all 0.5s ease-in-out;
   }
+}
+
+.icon2 {
+  padding-right: 4px;
+}
+
+.icon3 {
+  padding-right: 20px;
+}
 
 .box {
-    position: absolute;
-    padding: 10px;
-    text-align: right;
-    background: rgba(255, 255, 255, 0.389);
-    border-top: 2px solid #F1F1F1;
-    border-right: 1px solid #F1F1F1;
-    border-radius: 10% 13% 42% 0%/10% 12% 75% 0%;
-    box-shadow: rgba(100, 100, 111, 0.364) -7px 7px 29px 0px;
-    transform-origin: bottom left;
-    transition: all 1s ease-in-out;
-  }
+  position: absolute;
+  padding: 10px;
+  text-align: right;
+  background: rgba(255, 255, 255, 0.389);
+  border-top: 2px solid #F1F1F1;
+  border-right: 1px solid #F1F1F1;
+  border-radius: 10% 13% 42% 0%/10% 12% 75% 0%;
+  box-shadow: rgba(100, 100, 111, 0.364) -7px 7px 29px 0px;
+  transform-origin: bottom left;
+  transition: all 1s ease-in-out;
+}
 
   .box::before {
     content: "";
@@ -69,15 +77,10 @@
     transition: all 0.5s ease-in-out;
   }
 
-  .box:hover .containerIcon {
-    &__icon {
-        fill: black;
-    }
-  }
 
   .box1 {
-    width: 70%;
-    height: 70%;
+    width: 65%;
+    height: 65%;
     bottom: -80%;
     left: -80%;
   }
@@ -93,12 +96,12 @@
   .box1:hover .containerIcon {
     &__icon {
         filter: drop-shadow(0 0 5px white);
-    }  
+    }
   }
 
   .box2 {
-    width: 50%;
-    height: 50%;
+    width: 45%;
+    height: 45%;
     bottom: -60%;
     left: -60%;
     transition-delay: 0.2s;
@@ -119,8 +122,8 @@
   }
 
   .box3 {
-    width: 30%;
-    height: 30%;
+    width: 25%;
+    height: 25%;
     bottom: -40%;
     left: -40%;
     transition-delay: 0.4s;
@@ -146,7 +149,7 @@
   }
 
   .card:hover .socialsText {
-    transform: translate(50%, -66px);
+    transform: translate(50%, -58px);
     letter-spacing: 0px;
   }
 
@@ -176,7 +179,5 @@
     max-width: 100%;
     height: 190.39px;
   }
-
-
 }
 

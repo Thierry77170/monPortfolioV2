@@ -1,15 +1,67 @@
 @import '../../variables/variables.scss';
 
 .header {
-    background-color: $backgroundHeader;
-    border-bottom: 1px solid $boder-btnNavBar;
+    max-width: 98%;
+    margin: auto;
+    height: auto;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    display: flex;
+    gap: 2%;
+    &__nameContainer {
+        width: 100%;
+        min-width: 275px;
+        height: 164px;
+        border-radius: 10px;
+        background-color: $backgroundColor-elements;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 15px;
+    }
 }
 
-.headerContainer {
+.navContainer {
+    width: 100%;
+    height: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ulContainer {
+    width: 100%;
+    height: auto;
+    margin: 0px;
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    padding: 0px;
+    gap: 10px;
+}
+
+.active {
+    display: inline-block;
+    width: 100px;
+    height: auto;
+    border-radius: 15px;
+}
+
+.nameContainer {
+    height: 70%;
+    width: 100%;
+    padding-top: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     text-align: center;
-    padding: 50px 0px 20px 0px;
     &__title {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 3%;
         font-family: $font-family-comfortaa;
+        font-size: 28px;
         margin: 0px;
     }
     &__text1 {
@@ -22,42 +74,148 @@
     }
 }
 
-.navContainer {
+.contact {
     width: 100%;
-    display: flex;
-    justify-content: center;
-    position: fixed;
-    top: 0px;
-    z-index: 2;
-}
+    min-width: 301.77px;
+    max-width: 686px;
+    height: 194px;
+    perspective: 10000px;
+    &__inner {
+        height: 100%;
+        position: relative;
+        transform-style: preserve-3d;
+        transition: transform 1s;
+    }
+  }
 
-.ulContainer {
+  .contact:hover .contact__inner {
+    transform: rotateY(180deg);
+  }
+
+  .frontContact {
+    position: absolute;
     width: 100%;
-    height: auto;
-    margin: 0px;
-    list-style-type: none;
-    padding: 5px 0px;
-    border-bottom: 1px solid $boder-btnNavBar;
+    height: 164px;
+    padding: 15px 0px;
+    backface-visibility: hidden;
+    background-color: $backgroundColor-elements;
     display: flex;
+    flex-direction: column;
+    align-items: center;
     justify-content: center;
+    text-align: center;
     gap: 10px;
-    background-color: $backgroundColor-navBar;
-}
+    border-radius: 10px;
+    transform: rotateY(0deg);
+    &__text {
+        display: flex;
+        flex-direction: column;
+        font-family: $font-family-red-hat-display;
+        margin: 0px;
+    }
+    &__title {
+        margin: 0px;
+    }
+  }
 
-.active {
-    display: inline-block;
-    width: 100px;
-    height: auto;
-    border-radius: 15px;
-    border: 1px solid $border-btnNavBarActive;
+  .backContact {
+    position: absolute;
+    width: 100%;
+    height: 164px;
+    padding: 15px 0px;
+    backface-visibility: hidden;
+    background-color: $backgroundColor-elements;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 10px;
+    border-radius: 10px;
+    transform: rotateY(180deg);
+    &__contact {
+        height: 80%;
+        display: flex;
+        flex-direction: column;
+        &--container {
+            height: 50%;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            gap: 3%;
+            text-decoration: none;
+            font-family: $font-family-red-hat-display;
+            font-size: 12px;
+        }
+    }
+  }
 
-}
+  .backContactImg {
+    width: 20px;
+    height: 25px;
+  }
+
+  .backContactText {
+    font-family: $font-family-red-hat-display;
+    margin: 0px;
+  }
+
+  .contact__inner--front h3, .contact__inner--front p  {
+    margin: 0px 20px;
+  }
+  
+  .contact__inner--back h3, .contact__inner--back h4, .contact__inner--back p {
+    margin: 0px 20px;
+  }
 
 /******* Media queries **********/
-/*  Small devices (tablets, less than 560px)  */
-@media (max-width: 559px) {
+/*  Small devices (tablets, less than 978px)  */
+@media (max-width: 977px) {
     .header {
-        font-size: 0.8em;
+        width: 100%;
+        height: 396px;
+        padding-top: 2%;
+        margin-bottom: 2%;
+        margin: auto;
+        gap: 2%;
+        display: grid;
+        grid-template-columns: 49% 49% ;
+        grid-template-rows: 194px 194px;
+        &__nameContainer {
+            padding: 15px 0px;
+            grid-column-start: 1;
+            grid-column-end: 3;
+        }
     }
 }
 
+/*  Small devices (mobiles, less than 641px)  */
+@media (max-width: 640px) {
+    .header {
+        height: 582px;
+        display: flex;
+        flex-direction: column;
+        gap: 2%;
+        font-size: 0.8em;
+        &__nameContainer {
+            padding: 0px;
+            height: 194px;
+            
+        }
+    }
+
+    .nameContainer {
+        padding: 0px;
+    }
+
+    .frontContact {
+        padding: 0px;
+        height: 183.8px;
+    }
+
+    .backContact {
+        padding: 0px;
+        height: 183.8px;
+    }
+}

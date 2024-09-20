@@ -1,17 +1,20 @@
 @import '../../variables/variables.scss';
 
 .button {
+    border: none;
     cursor: pointer;
-    border: 1px solid $boder-btnNavBar;
-    border-radius: 15px;
+    border-radius: 5px;
     font-family: $font-family-red-hat-display;
-    font-size: 0.7em;
-    background-color: $backgroundColor-btnNavBar;
+    font-size: 1em;
     width: 100px;
-    height: auto;
+    height: 25px;
     padding: 2px;
+    color: $textColorBlack;
+    font-weight: bold;
+    background-color: $backgroundColor-btnNavBarHover;
+    
 }
 
 .button:hover {
-    background-color: $backgroundColor-btnNavBarHover;
+    background-color: $backgroundColor-btnNavBar;
 }

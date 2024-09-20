@@ -1,8 +1,22 @@
 // VARIABLE
 import developperActivity from '../../assets/images/DevelopperActivity-amico.png'
+import HTML5 from '../../assets/icons/file-type-html.226x256.png'
+import CSS3 from '../../assets/icons/css3.226x256.png'
+import JavaScript from '../../assets/icons/javascript-js.256x256.png'
+import ReactJs from '../../assets/icons/reactjs-fill.256x230.bleu.png'
+import Redux from '../../assets/icons/redux.256x243.violet.png'
+import apiRest from '../../assets/icons/rest-api.256x254.beige.png'
+import VSC from '../../assets/icons/visual-studio-code.256x255.png'
+import chromeDevTools from '../../assets/icons/chrome-devtools.256x256.png'
+import Sass from '../../assets/icons/file-type-sass.256x192.png'
+import Git from '../../assets/icons/git.256x256.png'
+import GitHub from '../../assets/icons/github.256x251.png'
 
 // STYLE
 import './about.scss'
+
+// COMPONENTS
+import StackCard from "../../components/stackCard/StackCard.jsx"
 
 function About() {
     return (
@@ -25,13 +39,28 @@ function About() {
                     </p>
                 </article>
             </section>
-            <section>
-                <h2>Ma stack</h2>
-
-            </section>
-            <section>
-                <h2>Les outils que j'utilise </h2>
-                
+            <section className='maStackSection'>
+                <div className='maStackContainer'>
+                    <h2 className='maStackContainer__title'>Ma stack</h2>
+                    <div className='maStack'>
+                        <StackCard title="HTML5" techno={HTML5}/>
+                        <StackCard title="CSS3" techno={CSS3}/>
+                        <StackCard title="JavaScript" techno={JavaScript}/>
+                        <StackCard title="React.js" techno={ReactJs}/>
+                        <StackCard title="Redux" techno={Redux}/>
+                        <StackCard title="API REST" techno={apiRest}/>
+                    </div>
+                </div>
+                <div className='mesOutilsContainer'>
+                    <h2 className='mesOutilsContainer__title'>Les outils que j'utilise </h2>
+                    <div className='mesOutils'>
+                        <StackCard title="VS code" techno={VSC}/>
+                        <StackCard title="DevTools" techno={chromeDevTools}/>
+                        <StackCard title="Sass" techno={Sass}/>
+                        <StackCard title="Git" techno={Git}/>
+                        <StackCard title="GitHub" techno={GitHub}/>
+                    </div>
+                </div>
             </section>
         </main>
     )

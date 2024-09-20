@@ -1,12 +1,15 @@
 @import '../../variables/variables.scss';
 
 .sliderContainer {
-    width: 100%;
+    width: 98%;
     height: 100%;
+    margin: auto;
+    margin-top: 2%;
+    border-radius: 10px;
     display: flex;
     justify-content: center;
-    background-color: $backgroundColor-sliderContainer-sand;
-    padding: 240px 0px 200px 0px;
+    background-color: $backgroundColor-elements;
+    padding: 290px 0px 240px 0px;
     position: relative;
     &__title {
         position: absolute;

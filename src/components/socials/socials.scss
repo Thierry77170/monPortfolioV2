@@ -1,0 +1,182 @@
+@import '../../variables/variables.scss';
+
+.card {
+    position: relative;
+    min-width: 301.77px;
+    max-width: 301.77px;
+    height: 190.58px;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: all 1s ease-in-out;
+    border: 2px solid #F1F1F1;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+  }
+
+.background {
+    position: absolute;
+    // Raccourci CSS équivalent à "top: 0; right: 0; bottom: 0; left: 0;"
+    inset: 0;
+    background-image: linear-gradient(to top, #4158D0 0%, #C850C0 100%);
+  }
+
+  .socialsText {
+    position: absolute;
+    right: 50%;
+    bottom: 50%;
+    transform: translate(50%, 50%);
+    transition: all 0.6s ease-in-out;
+    font-size: 1.4em;
+    font-family: $font-family-red-hat-display;
+    font-weight: bold;
+    // On définit l'espacement entre les caractères (ou lettres) du texte
+    letter-spacing: 2px;
+    margin: 0px;
+    width: 100%;
+    text-align: center;
+  }
+
+  .containerIcon {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    &__icon {
+        height: 20px;
+        width: 20px;
+        transition: all 0.5s ease-in-out;
+    }
+  }
+
+.box {
+    position: absolute;
+    padding: 10px;
+    text-align: right;
+    background: rgba(255, 255, 255, 0.389);
+    border-top: 2px solid #F1F1F1;
+    border-right: 1px solid #F1F1F1;
+    border-radius: 10% 13% 42% 0%/10% 12% 75% 0%;
+    box-shadow: rgba(100, 100, 111, 0.364) -7px 7px 29px 0px;
+    transform-origin: bottom left;
+    transition: all 1s ease-in-out;
+  }
+
+  .box::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    // Avec "inherit", l'élément enfant prendra la même valeur de rayon de bordure que son parent.
+    border-radius: inherit;
+    opacity: 0;
+    transition: all 0.5s ease-in-out;
+  }
+
+  .box:hover .containerIcon {
+    &__icon {
+        fill: black;
+    }
+  }
+
+  .box1 {
+    width: 70%;
+    height: 70%;
+    bottom: -80%;
+    left: -80%;
+  }
+
+  .box1::before {
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #ff53d4 60%, #62c2fe 90%);
+  }
+
+  .box1:hover::before {
+    opacity: 1;
+  }
+
+  .box1:hover .containerIcon {
+    &__icon {
+        filter: drop-shadow(0 0 5px white);
+    }  
+  }
+
+  .box2 {
+    width: 50%;
+    height: 50%;
+    bottom: -60%;
+    left: -60%;
+    transition-delay: 0.2s;
+  }
+
+  .box2::before {
+    background: radial-gradient(circle at 30% 107%, #91e9ff 0%, #00ACEE 90%);
+  }
+
+  .box2:hover::before {
+    opacity: 1;
+  }
+
+  .box2:hover .containerIcon {
+    &__icon {
+        filter: drop-shadow(0 0 5px white);
+    }  
+  }
+
+  .box3 {
+    width: 30%;
+    height: 30%;
+    bottom: -40%;
+    left: -40%;
+    transition-delay: 0.4s;
+  }
+
+  .box3::before {
+    background: radial-gradient(circle at 30% 107%, #969fff 0%, #b349ff 90%);
+  }
+
+.box3:hover::before {
+    opacity: 1;
+  }
+
+.box3:hover .containerIcon {
+    &__icon {
+        filter: drop-shadow(0 0 5px white);
+    } 
+  }
+
+.card:hover .box {
+    bottom: -1px;
+    left: -1px;
+  }
+
+  .card:hover .socialsText {
+    transform: translate(50%, -66px);
+    letter-spacing: 0px;
+  }
+
+  /***** Media queries ******/
+/*  Small devices (tablets, less than 978px)  */
+@media (max-width: 977px) {
+  .card {
+    min-width: 99%;
+    max-width: 100%;
+  }
+
+  .containerIcon {
+    width: 40px;
+    height: 40px;
+    &__icon {
+        height: 40px;
+        width: 40px;
+        transition: all 0.5s ease-in-out;
+    }
+  }
+}
+
+/*  Small devices (mobiles, less than 641px)  */
+@media (max-width: 640px) {
+  .card {
+    min-width: 301.77px;
+    max-width: 100%;
+    height: 190.39px;
+  }
+
+
+}
+

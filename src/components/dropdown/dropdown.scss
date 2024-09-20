@@ -3,13 +3,18 @@
 .sectionDropdown {
     display: flex;
     justify-content: center;
-    background-color: $backgroundColor-navBar;
+    background-color: $backgroundColor-elements;
+    width: 98%;
+    margin: auto;
+    border-radius: 10px;
+    margin-top: 2%;
+    margin-bottom: 2%;
     &__dropdownContainer {
         width: 100%;
         max-width: 800px;
         margin: 20px 16px;
         border-radius: 5px;
-        border: 1px solid $boder-btnNavBar;
+        border: 1px solid $backgroundColor-btnNavBarHover;
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         overflow: hidden;
     }
@@ -19,9 +24,9 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
-    border-radius: 4px 4px 0px 0px;
-    background-color: $backgroundColor-btnNavBar;
+    border-radius: 3px 3px 0px 0px;
     cursor: pointer;
+    background-color: $backgroundColor-btnNavBar;
     &__arrow {
         transform: rotate(180deg);
         transition: transform 0.8s ease-in-out;
@@ -39,9 +44,11 @@
     transition: max-height 0.8s ease-in-out;
     font-family: $font-family-red-hat-display;
     font-size: 12px;
+    background-color: $backgroundColor-elements;
     &__text {
         margin: 0px;
         padding: 10px;
+        font-size: 16px;
     }
     &__containerIcons {
         display: flex;
@@ -58,4 +65,13 @@
 .dropdownTextContainer.open {
     max-height: 500px;
     transition: max-height 0.8s ease-in-out;
+}
+
+/*  Small devices (mobiles, less than 641px)  */
+@media (max-width: 640px) {
+    .dropdownTextContainer {
+        &__text {
+            font-size: 12px;
+        }
+    }
 }

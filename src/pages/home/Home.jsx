@@ -14,7 +14,6 @@ function Home() {
                 const data = await response.json();
                 const projectsFields = data.documents.map(doc => doc.fields);
                 setProjects(projectsFields);
-                console.log("fetchData", projectsFields);
             } catch (error) {
                 console.error("Error fetching data:", error);
             }

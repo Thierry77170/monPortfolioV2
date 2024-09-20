@@ -4,13 +4,15 @@
    display: flex;
    justify-content: center;
    align-items: center;
+   border: 2px solid $border-slide;
    border-radius: 50%;
    cursor: pointer;
-   width: 30px;
-   height: 30px;
+   width: 26px;
+   height: 26px;
+   padding: 13px;
    &__icons {
-      width: 13px;
-      height: 22px;
+      width: 9px;
+      height: 16px;
    }
 }
 
@@ -20,6 +22,7 @@
    .arrow {
       width: 20px;
       height: 20px;
+      padding: 10px;
       &__icons {
          width: 8px;
          height: 13px;

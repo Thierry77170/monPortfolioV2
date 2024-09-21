@@ -1,12 +1,11 @@
 @import '../../variables/variables.scss';
 
 .footer {
-    padding: 0px 16px 20px 16px;
+    padding: 20px 16px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding-top: 2%;
     &__textContainer {
       font-family: $font-family-red-hat-display;
       text-align: center;
@@ -30,8 +29,11 @@
     border-radius: 5px;
     padding: 10px;
     font-family: $font-family-red-hat-display;
-    
 }
 
-
-
+/*  Small devices (mobiles, less than 641px)  */
+@media (max-width: 640px) {
+    .footer {
+        padding: 10px 16px;
+    }
+}

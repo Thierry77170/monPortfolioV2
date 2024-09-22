@@ -48,9 +48,9 @@ function Header() {
                 <div className="contact__inner">
                     <div className="frontContact">
                         <p className="frontContact__text">
-                            Je suis disponible 
+                            Je suis à l'écoute pour
                             <span>
-                                pour une offre d'emploi !
+                                toute opportunité professionnelle !
                             </span>
                         </p>
                         <h2 className="frontContact__title">Me contacter</h2>

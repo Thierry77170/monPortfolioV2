@@ -2,7 +2,7 @@
 
 .slide {
     border: 1px solid $border-slide;
-    border-radius: 10px;
+    border-radius: 5px;
     width: 145px;
     height: 320px;
     display: flex;
@@ -18,7 +18,7 @@
         width: 100%;
         height: 47%;
         object-fit: cover;
-        border-radius: 5px;
+        border-radius: 4px;
         border: 1px solid $border-slide;
     }
     &__title {

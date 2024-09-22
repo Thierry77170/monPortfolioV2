@@ -14,6 +14,7 @@
         height: 164px;
         border-radius: 10px;
         background-color: $backgroundColor-elements;
+        background: hsla(58, 100%, 99%, 0.75);
         display: flex;
         flex-direction: column;
         justify-content: space-between;
@@ -99,6 +100,7 @@
     padding: 15px 0px;
     backface-visibility: hidden;
     background-color: $backgroundColor-elements;
+    background: hsla(58, 100%, 99%, 0.75);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -125,6 +127,7 @@
     padding: 15px 0px;
     backface-visibility: hidden;
     background-color: $backgroundColor-elements;
+    background: hsla(58, 100%, 99%, 0.75);
     display: flex;
     flex-direction: column;
     align-items: center;

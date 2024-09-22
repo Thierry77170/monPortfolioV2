@@ -10,7 +10,7 @@ function Socials() {
     return (
         <div className="card">
             <div className="background"></div>
-            <p className="socialsText">Mes réseaux</p>
+            <h2 className="socialsText">Mes réseaux</h2>
             <a href="https://github.com/Thierry77170?tab=repositories" 
                 target="_blank" 
                 rel="noopener noreferrer"
@@ -20,7 +20,7 @@ function Socials() {
                     <span className="ContainerIcon">
                         <img 
                             src={gitHub} 
-                            alt={`icon de ${gitHub}`}
+                            alt="icon GitHub"
                             className='containerIcon__icon icon1' 
                         />
                     </span>
@@ -35,7 +35,7 @@ function Socials() {
                     <span className="ContainerIcon">
                         <img 
                             src={linkedin} 
-                            alt={`icon de ${linkedin}`}
+                            alt="icon linkedin"
                             className='containerIcon__icon icon2' 
                         />
                     </span>
@@ -50,7 +50,7 @@ function Socials() {
                     <span className="ContainerIcon">
                         <img 
                             src={discord}
-                            alt={`icon de ${discord}`}
+                            alt="icon discord"
                             className='containerIcon__icon icon3' 
                         />
                     </span>

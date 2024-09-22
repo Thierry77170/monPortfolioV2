@@ -11,11 +11,13 @@ import './footer.scss'
 function Footer() {
     return (
         <footer className='footer'>
-            <a href={process.env.PUBLIC_URL + '/files/C.V.Thierry.DeSousa.pdf'} 
-                download
-                className='downloadCV'
+            <a href="/files/C.V.Thierry.DeSousa.pdf" 
+                download="" 
+                className="downloadCV" 
+                title="Téléchargez mon C.V. au format PDF" 
+                aria-label="Téléchargez mon C.V. au format PDF"
             >
-                Téléchargez mon C.V.
+                    Téléchargez mon C.V. (PDF)
             </a>
             <p className='footer__textContainer'>
                 Cette application web a été développée avec

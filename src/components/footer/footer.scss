@@ -8,8 +8,10 @@
     align-items: center;
     &__textContainer {
       font-family: $font-family-red-hat-display;
+      font-weight: 300;
       text-align: center;
       margin: 2% 0px;
+      color: $backgroundColor-elements;
     }
 }
 
@@ -25,10 +27,18 @@
 
 .downloadCV {
     background-color: $backgroundColor-ProjectCard;
+    background: hsla(58, 100%, 99%, 0.75);
     text-decoration: none;
     border-radius: 5px;
     padding: 10px;
     font-family: $font-family-red-hat-display;
+    font-weight: 500;
+    color: $textColorBlack;
+}
+
+.downloadCV:hover {
+    background: $backgroundColor-ProjectCard;
+    color: #4158D0;
 }
 
 /*  Small devices (mobiles, less than 641px)  */

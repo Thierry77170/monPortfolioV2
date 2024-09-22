@@ -11,10 +11,11 @@
     padding: 2px;
     color: $textColorBlack;
     font-weight: bold;
-    background-color: $backgroundColor-btnNavBarHover;
+    background-color: $backgroundColor-btnNavBar;
     
 }
 
 .button:hover {
-    background-color: $backgroundColor-btnNavBar;
+    color: white;
+    background-color: $backgroundColor-btnNavBarHover;
 }

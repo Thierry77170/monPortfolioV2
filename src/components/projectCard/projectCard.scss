@@ -32,12 +32,17 @@
         text-align: center;
         margin: 0px;
     }
+}
+
+.containerSlideLien {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
     &__lien {
-        width: 30px;
-        height: 30px;
         &--icon {
-            width: 100%;
-            height: 100%;
+            width: 30px;
+            height: 30px;
         }
     }
 }
@@ -59,9 +64,15 @@
         &__text {
             font-size: 6px;
         }
+    }
+
+    .containerSlideLien {
         &__lien {
-            width: 20px;
-            height: 20px;
+            
+            &--icon {
+                width: 20px;
+                height: 20px;
+            }
         }
     }
 }
@@ -80,6 +91,15 @@
         }
         &__text {
             font-size: 0.9em;
+        }
+    }
+
+    .containerSlideLien {
+        &__lien {
+            &--icon {
+                width: 30px;
+                height: 30px;
+            }
         }
     }
 }

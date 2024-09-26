@@ -22,12 +22,14 @@
         border: 1px solid $border-slide;
     }
     &__title {
+        height: 8%;
         font-size: 0.8em;
         font-family: $font-family-comfortaa;
         margin: 0px;
         text-align: center;
     }
     &__text {
+        height: 30%;
         font-size: 0.6em;
         font-family: $font-family-red-hat-display;
         text-align: center;
@@ -37,6 +39,7 @@
 
 .containerSlideLien {
     width: 100%;
+    
     display: flex;
     justify-content: center;
     gap: 20px;
@@ -64,6 +67,7 @@
         }
         &__text {
             font-size: 6px;
+            height: 22.5%;
         }
     }
 

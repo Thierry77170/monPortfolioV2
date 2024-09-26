@@ -117,7 +117,7 @@ function Slider({projects}) {
     if (isVerySmallScreen) {
       const middleIndex = Math.floor(total / 2);
       const adjustedIndex = (index - currentIndex + total) % total;
-      return adjustedIndex === middleIndex ? 'Flex' : 'none';
+      return adjustedIndex === middleIndex ? 'flex' : 'none';
     }
     return 'block';
   };

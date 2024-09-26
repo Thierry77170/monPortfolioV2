@@ -5,7 +5,7 @@ import web from '../../assets/icons/web.256x256.png';
 // STYLE
 import './projectCard.scss';
 
-function ProjectCard({project, style, text}) {
+function ProjectCard({project, style}) {
   return (
     <div className='slide' style={style}>
         <img className='slide__img' src={project.image.stringValue} alt={`présentation de ${project.title.stringValue}`} />

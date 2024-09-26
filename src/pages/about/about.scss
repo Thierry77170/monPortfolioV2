@@ -118,7 +118,7 @@
     .maStackContainer, .mesOutilsContainer {
         &__title {
             font-size: 16px;
-            padding: 0px;
+            padding: 15px 0px 0px 0px;
         }
     }
 
@@ -129,7 +129,7 @@
         height: auto;
         width: 100%;
         gap: 20px;
-        padding-bottom: 3%;
+        padding-bottom: 8%;
     }
 }
 
@@ -167,6 +167,12 @@
 
  /* Small devices (mobile, less than 501px)  */
  @media (max-width: 500px) {
+    .maStackContainer, .mesOutilsContainer {
+        &__title {
+            padding: 15px 0px 0px 0px;
+        }
+    }
+
     .maStackSection {
         display: flex;
         flex-direction: column;

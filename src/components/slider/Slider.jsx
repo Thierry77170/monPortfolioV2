@@ -113,6 +113,15 @@ function Slider({projects}) {
     }
   };
 
+  const getDisplay = (index, total) => {
+    if (isVerySmallScreen) {
+      const middleIndex = Math.floor(total / 2);
+      const adjustedIndex = (index - currentIndex + total) % total;
+      return adjustedIndex === middleIndex ? 'Flex' : 'none';
+    }
+    return 'block';
+  };
+
   const handleClickPrevBtn = () => {
     setCurrentIndex((prevIndex) => (prevIndex - 1 + projects.length) % projects.length);
   }
@@ -130,9 +139,11 @@ function Slider({projects}) {
                 const rotateY = getRotateY(index, projects.length);
                 const translateZ = getTranslateZ(index, projects.length);
                 const opacity = getOpacity(index, projects.length);
+                const display = getDisplay(index, projects.length);
                 const style = {
                     transform: `rotateY(${rotateY}deg) translateZ(${translateZ}px)`,
-                    opacity: opacity
+                    opacity: opacity,
+                    display: display,
                 }
                 return <ProjectCard 
                   key={index} 

@@ -29,7 +29,7 @@
         text-align: center;
     }
     &__text {
-        height: 30%;
+        height: 105px;
         font-size: 0.6em;
         font-family: $font-family-red-hat-display;
         text-align: center;
@@ -39,11 +39,14 @@
 
 .containerSlideLien {
     width: 100%;
-    
+    height: auto;
     display: flex;
     justify-content: center;
     gap: 20px;
     &__lien {
+        display: flex;
+        justify-content: center;
+        align-items: center;
         &--icon {
             width: 30px;
             height: 30px;
@@ -63,7 +66,6 @@
         }
         &__title {
             font-size: 0.6em;
-            
         }
         &__text {
             font-size: 6px;
@@ -88,18 +90,22 @@
         height: 380px;
         padding: 6px;
         &__img {
-            height: 57%;
+            height: 216.6px;
         }
         &__title {
+            height: auto;
             font-size: 1em;
+            padding: 10px 0px;
         }
         &__text {
+            height: 100%;
             font-size: 0.9em;
         }
     }
 
     .containerSlideLien {
         &__lien {
+            height: 40px;
             &--icon {
                 width: 30px;
                 height: 30px;

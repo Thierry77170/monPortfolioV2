@@ -16,19 +16,19 @@ import './header.scss';
 import BtnNavBar from '../btnNavBar/BtnNavBar.jsx'
 
 function Header() {
-    
+
     return (
         <header className='header'>
             <div className='header__nameContainer'>
                 <nav className='navContainer'>
                     <ul className='ulContainer'>
                         <li>
-                            <NavLink to='/home' className={({ isActive }) => isActive ? 'active' : ''}>
-                                <BtnNavBar title="Accueil"/>
+                            <NavLink to='/home'>
+                                <BtnNavBar title="Accueil" />
                             </NavLink>
                         </li>
                         <li>
-                            <NavLink to='/about' className={({ isActive }) => isActive ? 'active' : ''}>
+                            <NavLink to='/about'>
                                 <BtnNavBar title="À propos" />
                             </NavLink>
                         </li>

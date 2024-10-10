@@ -1,6 +1,6 @@
 @import '../../variables/variables.scss';
 
-.button {
+button {
     border: none;
     cursor: pointer;
     border-radius: 5px;
@@ -9,13 +9,19 @@
     width: 100px;
     height: 25px;
     padding: 2px;
-    color: $textColorBlack;
     font-weight: bold;
-    background-color: $backgroundColor-btnNavBar;
-    
 }
 
-.button:hover {
+button:hover {
+    text-decoration: underline;
+}
+
+.active {
     color: white;
     background-color: $backgroundColor-btnNavBarHover;
+}
+
+.disabled {
+    color: $textColorBlack;
+    background-color: $backgroundColor-btnNavBar;
 }

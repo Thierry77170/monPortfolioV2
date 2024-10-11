@@ -7,7 +7,7 @@
     margin-top: 20px;
     padding-bottom: 20px;
     display: flex;
-    gap: 2%;
+    gap: 20px;
     &__nameContainer {
         width: 100%;
         min-width: 275px;
@@ -174,9 +174,9 @@
         width: 98%;
         height: 405px;
         display: grid;
-        grid-template-columns: 48% 48% ;
+        grid-template-columns: auto auto ;
         grid-template-rows: 194px 194px;
-        gap: 4%;
+        gap: 20px;
         &__nameContainer {
             padding: 15px 0px;
             grid-column-start: 1;

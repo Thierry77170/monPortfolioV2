@@ -50,8 +50,9 @@ function Header() {
                         <p className="frontContact__text">
                             Je suis à l'écoute pour
                             <span>
-                                toute opportunité professionnelle !
+                                toute opportunité professionnelle
                             </span>
+                            <span>ou tout projet freelance !</span>
                         </p>
                         <h2 className="frontContact__title">Me contacter</h2>
                     </div>

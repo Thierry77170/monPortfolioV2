@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.6f4f70a6.css",
-    "main.js": "/static/js/main.67c48be7.js",
+    "main.css": "/static/css/main.c5df3863.css",
+    "main.js": "/static/js/main.5808c07f.js",
     "static/media/DevelopperActivity-amico.png": "/static/media/DevelopperActivity-amico.35f4fd038c54dc561450.png",
     "static/media/404Error-amico.png": "/static/media/404Error-amico.1bb61e0c7cbf8e7d8641.png",
     "static/media/reactjs-fill.256x230.bleu.png": "/static/media/reactjs-fill.256x230.bleu.fd570496032bf0ee5aee.png",
@@ -12,11 +12,11 @@
     "static/media/file-type-sass.256x192.png": "/static/media/file-type-sass.256x192.ddc58a3c5be106280e06.png",
     "static/media/firebase.187x256.png": "/static/media/firebase.187x256.2f25dc86f369bc0babff.png",
     "index.html": "/index.html",
-    "main.6f4f70a6.css.map": "/static/css/main.6f4f70a6.css.map",
-    "main.67c48be7.js.map": "/static/js/main.67c48be7.js.map"
+    "main.c5df3863.css.map": "/static/css/main.c5df3863.css.map",
+    "main.5808c07f.js.map": "/static/js/main.5808c07f.js.map"
   },
   "entrypoints": [
-    "static/css/main.6f4f70a6.css",
-    "static/js/main.67c48be7.js"
+    "static/css/main.c5df3863.css",
+    "static/js/main.5808c07f.js"
   ]
 }

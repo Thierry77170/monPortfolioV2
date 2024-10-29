@@ -36,8 +36,8 @@ function Header() {
                 </nav>
                 <div className='nameContainer'>
                     <h1 className="nameContainer__title">
-                        <span>Thierry </span>
                         <span>DE SOUSA</span>
+                        <span>Thierry</span>
                     </h1>
                     <p className='nameContainer__text1'>Développeur web Front-End JavaScript/React.js</p>
                     <p className='nameContainer__text2'>Passionné et engagé</p>

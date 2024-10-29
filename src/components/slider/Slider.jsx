@@ -17,6 +17,7 @@ function Slider({projects}) {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isSmallScreen, setIsSmallScreen] = useState(false);
   const [isVerySmallScreen, setIsVerySmallScreen] = useState(false);
+  const [centralTittle, setCentralTitle] = useState('');
   const [centralDescription, setCentralDescription] = useState('');
   const [centralTechno1, setCentralTechno1] = useState('');
   const [centralTechno2, setCentralTechno2] = useState('');
@@ -37,6 +38,7 @@ function Slider({projects}) {
     if (projects.length > 0) {
         const middleIndex = Math.floor(projects.length / 2);
         const adjustedIndex = (currentIndex + middleIndex) % projects.length;
+        setCentralTitle(projects[adjustedIndex].title?.stringValue || '');
         setCentralDescription(projects[adjustedIndex].description?.stringValue || '');
         setCentralTechno1(projects[adjustedIndex].techno1?.stringValue || '');
         setCentralTechno2(projects[adjustedIndex].techno2?.stringValue || '');
@@ -50,7 +52,7 @@ function Slider({projects}) {
         setCentralTechno4('');
     }
   }, [currentIndex, projects]);
-  
+
   const getRotateY = (index, total) => {
       if (isVerySmallScreen) {
         return 0;
@@ -132,7 +134,7 @@ function Slider({projects}) {
 
   return (
     <>
-      <section className='sliderContainer'>
+      <div className='sliderContainer'>
         <h2 className='sliderContainer__title'>Mes réalisations</h2>
         <div className='sliderContainer__slider'>
             {projects.map((project, index) => {
@@ -164,8 +166,9 @@ function Slider({projects}) {
                 onClick={handleClickNextBtn}
             />
         </div>
-      </section>
+      </div>
       <Dropdown 
+        title={centralTittle}
         description={centralDescription}
         techno1={centralTechno1}
         techno2={centralTechno2}

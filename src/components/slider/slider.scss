@@ -1,14 +1,11 @@
 @import '../../variables/variables.scss';
 
 .sliderContainer {
-    width: 98%;
+    width: 100%;
     height: 100%;
     margin: auto;
-    border-radius: 10px;
     display: flex;
     justify-content: center;
-    background-color: $backgroundColor-elements;
-    background: hsla(58, 100%, 99%, 0.75);
     padding: 290px 0px 240px 0px;
     position: relative;
     &__title {
@@ -16,7 +13,6 @@
         top: 0px;
         z-index: 1;
     }
-    
     &__slider {
         width: 100%;
         display: flex;
@@ -36,6 +32,10 @@
         position: relative;
         padding: 0px 20px;
     }
+}
+
+.DropdownSliderContainer {
+    margin: auto;
 }
 
 /******* Media queries **********/

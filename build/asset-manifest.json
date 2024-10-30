@@ -1,9 +1,10 @@
 {
   "files": {
-    "main.css": "/static/css/main.c5df3863.css",
-    "main.js": "/static/js/main.5808c07f.js",
+    "main.css": "/static/css/main.978d982e.css",
+    "main.js": "/static/js/main.f548d62a.js",
     "static/media/DevelopperActivity-amico.png": "/static/media/DevelopperActivity-amico.35f4fd038c54dc561450.png",
     "static/media/404Error-amico.png": "/static/media/404Error-amico.1bb61e0c7cbf8e7d8641.png",
+    "static/media/logoDST.png": "/static/media/logoDST.961d184c03e8fa00ef0b.png",
     "static/media/reactjs-fill.256x230.bleu.png": "/static/media/reactjs-fill.256x230.bleu.fd570496032bf0ee5aee.png",
     "static/media/redux.256x243.violet.png": "/static/media/redux.256x243.violet.958d7a9953dfc3cf4ad0.png",
     "static/media/chrome-devtools.256x256.png": "/static/media/chrome-devtools.256x256.6bf6e730ef403440946e.png",
@@ -12,11 +13,11 @@
     "static/media/file-type-sass.256x192.png": "/static/media/file-type-sass.256x192.ddc58a3c5be106280e06.png",
     "static/media/firebase.187x256.png": "/static/media/firebase.187x256.2f25dc86f369bc0babff.png",
     "index.html": "/index.html",
-    "main.c5df3863.css.map": "/static/css/main.c5df3863.css.map",
-    "main.5808c07f.js.map": "/static/js/main.5808c07f.js.map"
+    "main.978d982e.css.map": "/static/css/main.978d982e.css.map",
+    "main.f548d62a.js.map": "/static/js/main.f548d62a.js.map"
   },
   "entrypoints": [
-    "static/css/main.c5df3863.css",
-    "static/js/main.5808c07f.js"
+    "static/css/main.978d982e.css",
+    "static/js/main.f548d62a.js"
   ]
 }

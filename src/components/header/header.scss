@@ -8,6 +8,11 @@
     padding-bottom: 20px;
     display: flex;
     gap: 20px;
+    &__logo {
+        width: 193.99px;
+        height: 193.99px;
+        border-radius: 10px;
+    }
     &__nameContainer {
         width: 100%;
         min-width: 275px;
@@ -71,7 +76,6 @@
 .contact {
     width: 100%;
     min-width: 301.77px;
-    max-width: 686px;
     height: 194px;
     perspective: 10000px;
     &__inner {
@@ -92,7 +96,6 @@
     height: 164px;
     padding: 15px 0px;
     backface-visibility: hidden;
-    background-color: $backgroundColor-elements;
     background: hsla(58, 100%, 99%, 0.75);
     display: flex;
     flex-direction: column;
@@ -119,7 +122,6 @@
     height: 164px;
     padding: 15px 0px;
     backface-visibility: hidden;
-    background-color: $backgroundColor-elements;
     background: hsla(58, 100%, 99%, 0.75);
     display: flex;
     flex-direction: column;
@@ -166,6 +168,24 @@
   }
 
 /******* Media queries **********/
+/*  Small devices (tablets and desktop, less than 1204.1px)  */
+@media (min-width: 640.1px) and (max-width: 1204px){
+    .header {
+        display: grid;
+        grid-template-columns: 193.99px auto 301.77px;
+        grid-template-rows: 194px 194px;
+        &__nameContainer {
+            width: auto;
+            grid-column-start: 2;
+            grid-column-end: 4;
+        }
+    }
+    .contact {
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+}
+
 /*  Small devices (tablets, less than 978px)  */
 @media (max-width: 977px) {
     .header {
@@ -173,15 +193,6 @@
         padding-bottom: 20px;
         width: 98%;
         height: 405px;
-        display: grid;
-        grid-template-columns: auto auto ;
-        grid-template-rows: 194px 194px;
-        gap: 20px;
-        &__nameContainer {
-            padding: 15px 0px;
-            grid-column-start: 1;
-            grid-column-end: 3;
-        }
     }
 }
 
@@ -196,6 +207,10 @@
         margin-top: 10px;
         margin-bottom: 10px;
         padding: 0px;
+        &__logo {
+            width: 100%;
+            height: auto;
+        }
         &__nameContainer {
             padding: 0px;
             height: 194px;

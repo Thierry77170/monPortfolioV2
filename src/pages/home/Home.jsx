@@ -54,7 +54,7 @@ function Home() {
                 />
                 <Dropdown 
                     title="Gestion de Projet Web de A à Z"
-                    Description="Description : Gérer un projet web de A à Z : du chiffrage et découpage des tâches du projet à la présentation de la solution, en passant par la rédaction des spécifications techniques."
+                    description="Description : Gérer un projet web de A à Z : du chiffrage et découpage des tâches du projet à la présentation de la solution, en passant par la rédaction des spécifications techniques."
                     exemple="Exemple de Réalisation : Coordination d'un projet de refonte complète d'un site web, incluant la planification, le développement et la livraison."
                 />
             </section>

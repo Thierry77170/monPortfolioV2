@@ -5,6 +5,7 @@ import { NavLink } from 'react-router-dom';
 import Email from '../../assets/icons/e-mail.256x256.png'
 import mapPin from '../../assets/icons/map-pin.144x256.png'
 import mobile from '../../assets/icons/mobile.160x256.png'
+import logoDST from '../../assets/images/logoDST.png'
 
 // COMPONENTS
 import Socials from '../socials/Socials.jsx'
@@ -19,6 +20,7 @@ function Header() {
 
     return (
         <header className='header'>
+            <img src={logoDST} alt="logo DST" className='header__logo' />
             <div className='header__nameContainer'>
                 <nav className='navContainer'>
                     <ul className='ulContainer'>
@@ -43,7 +45,6 @@ function Header() {
                     <p className='nameContainer__text2'>Passionné et engagé</p>
                 </div>
             </div>
-            
             <div className="contact">
                 <div className="contact__inner">
                     <div className="frontContact">

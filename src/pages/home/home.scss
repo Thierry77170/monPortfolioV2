@@ -31,3 +31,13 @@
     }
 }
 
+/******* Media queries **********/
+/* Small devices (mobiles, less than 641px)  */
+@media (max-width: 640px) {
+    .mesRealisationsContainer {
+        margin-bottom: 10px;
+    }
+    .mesServicesContainer {
+        margin-top: 0px;
+    }
+}

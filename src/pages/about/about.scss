@@ -63,7 +63,7 @@
     height: auto;
     display: flex;
     gap: 20px;
-    margin-bottom: 2%;
+    margin-bottom: 20px;
     margin: auto;
 }
 
@@ -98,7 +98,7 @@
 
 /******* Media queries **********/
 /*  Large devices (Desktop, more than 2690px)  */
-@media (min-width: 2691px) {
+@media (min-width: 2600px) {
     .maStack, .mesOutils {
         display: grid;
         grid-template-columns: 221px 221px 221px 221px 221px;

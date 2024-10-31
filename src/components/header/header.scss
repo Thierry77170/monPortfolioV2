@@ -8,10 +8,16 @@
     padding-bottom: 20px;
     display: flex;
     gap: 20px;
-    &__logo {
-        width: 193.99px;
+    &__logoContainer {
+        width: 300.23px;
         height: 193.99px;
+        background: #ffffff;
         border-radius: 10px;
+        &--logo {
+            max-width: 300.23px;
+            height: 100%;
+            border-radius: 10px;
+        }
     }
     &__nameContainer {
         width: 100%;
@@ -169,11 +175,16 @@
 
 /******* Media queries **********/
 /*  Small devices (tablets and desktop, less than 1204.1px)  */
-@media (min-width: 640.1px) and (max-width: 1204px){
+@media (min-width: 640.1px) and (max-width: 1338px){
     .header {
         display: grid;
-        grid-template-columns: 193.99px auto 301.77px;
+        grid-template-columns: 324.36px auto 301.77px;
         grid-template-rows: 194px 194px;
+        &__logoContainer {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+        }
         &__nameContainer {
             width: auto;
             grid-column-start: 2;
@@ -196,8 +207,8 @@
     }
 }
 
-/* Small devices (mobiles, less than 641px)  */
-@media (max-width: 640px) {
+/* Small devices (mobiles, less than 690.1px)  */
+@media (max-width: 690px) {
     .header {
         height: auto;
         display: flex;
@@ -207,9 +218,10 @@
         margin-top: 10px;
         margin-bottom: 10px;
         padding: 0px;
-        &__logo {
+        &__logoContainer {
             width: 100%;
-            height: auto;
+            display: flex;
+            justify-content: center;
         }
         &__nameContainer {
             padding: 0px;

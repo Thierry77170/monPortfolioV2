@@ -29,8 +29,8 @@
         max-width: 320px;
         height: auto;
         font-family: $font-family-red-hat-display;
-        font-size: 0.8em;
-        font-weight: 500;
+        font-size: 0.9em;
+        font-weight: 600;
         text-align: center;
         animation: slideFromRight 1s ease-in-out forwards;
     }
@@ -131,7 +131,7 @@
     }
 }
 
-/* Small devices (mobile, less than 641px)  */
+/* Small devices (mobile, less than 640.1px)  */
 @media (max-width: 640px) {
     .aboutMeSection {
         margin-top: 10px;
@@ -142,8 +142,8 @@
     }
 }
 
-/* Small devices (mobile, less than 630px)  */
- @media (max-width: 629px) {
+/* Small devices (mobile, less than 640.1px)  */
+ @media (max-width: 640px) {
     .aboutMeContainer {
         display: flex;
         flex-direction: column;

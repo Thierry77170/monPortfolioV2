@@ -12,7 +12,7 @@ import './footer.scss'
 function Footer() {
     return (
         <footer className='footer'>
-            <a href="/files/C.V.Thierry.DeSousa.pdf" 
+            <a href="/files/cvThierryDeSousa.pdf" 
                 download="" 
                 className="downloadCV" 
                 title="Téléchargez mon C.V. au format PDF" 

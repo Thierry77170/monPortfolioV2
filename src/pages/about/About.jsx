@@ -3,7 +3,7 @@ import developperActivity from '../../assets/images/DevelopperActivity-amico.png
 import HTML5 from '../../assets/icons/file-type-html.226x256.png'
 import CSS3 from '../../assets/icons/css3.226x256.png'
 import JavaScript from '../../assets/icons/javascript-js.256x256.png'
-import ReactJs from '../../assets/icons/reactjs-fill.256x230.bleu.png'
+import ReactJs from '../../assets/icons/reactjs-fill.256x230Bleu.png'
 import Redux from '../../assets/icons/redux.256x243.violet.png'
 import apiRest from '../../assets/icons/rest-api.256x254.beige.png'
 import VSC from '../../assets/icons/visual-studio-code.256x255.png'

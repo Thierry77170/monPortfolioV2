@@ -3,7 +3,7 @@ import HTML5 from '../../assets/icons/file-type-html.226x256.png'
 import CSS3 from '../../assets/icons/css3.226x256.png'
 import Sass from '../../assets/icons/sass.256x256.png'
 import JavaScript from '../../assets/icons/javascript-js.256x256.png'
-import ReactJs from '../../assets/icons/reactjs-fill.256x230.bleu.png'
+import ReactJsClair from '../../assets/icons/reactjs-fill.256x230BleuClair.png'
 import Firebase from '../../assets/icons/firebase.187x256.png'
 
 // STYLE
@@ -28,7 +28,7 @@ function Footer() {
                 <img src={CSS3} alt="icon CSS3" className='iconsContainerFooter__icon' />
                 <img src={Sass} alt="icon Sass" className='iconsContainerFooter__icon' />
                 <img src={JavaScript} alt="icon JavaScript" className='iconsContainerFooter__icon' />
-                <img src={ReactJs} alt="icon React.js" className='iconsContainerFooter__icon' />
+                <img src={ReactJsClair} alt="icon React.js" className='iconsContainerFooter__icon' />
                 <img src={Firebase} alt="icon Firebase" className='iconsContainerFooter__icon' />
             </div>
         </footer>

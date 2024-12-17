@@ -11,6 +11,8 @@ import chromeDevTools from '../../assets/icons/chrome-devtools.256x256.png'
 import Sass from '../../assets/icons/file-type-sass.256x192.png'
 import Git from '../../assets/icons/git.256x256.png'
 import GitHub from '../../assets/icons/github.256x251.png'
+import Figma from '../../assets/icons/figma.171x256.png'
+import Cursor from '../../assets/icons/cursor.png'
 
 // STYLE
 import './about.scss'
@@ -55,10 +57,12 @@ function About() {
                     <h2 className='mesOutilsContainer__title'>Les outils que j'utilise </h2>
                     <div className='mesOutils'>
                         <StackCard title="VS code" techno={VSC}/>
+                        <StackCard title="Cursor" techno={Cursor}/>
                         <StackCard title="DevTools" techno={chromeDevTools}/>
                         <StackCard title="Sass" techno={Sass}/>
                         <StackCard title="Git" techno={Git}/>
                         <StackCard title="GitHub" techno={GitHub}/>
+                        <StackCard title="Figma" techno={Figma}/>
                     </div>
                 </div>
             </section>
